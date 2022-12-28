@@ -1,0 +1,77 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Surajmk78/Learning-github/blob/main/Guess%20the%20number%20game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Guess the Number Game**"
+      ],
+      "metadata": {
+        "id": "m-NjdbB_WENH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "print(\"WELCOME TO GAME \\n\\\"\\\" GUESS THE NUMBER \\\"\\\"\")\n",
+        "print(\"\\n\\n\\nLet's set the range to choose the numbers between them\")\n",
+        "starting_number = int(input(\"Enter first number:  \"))\n",
+        "last_number = int(input(\"Enter last number:  \"))\n",
+        "\n",
+        "computer_choice = random.randint(starting_number,last_number)\n",
+        "# print(computer_choice)\n",
+        "user_choice = int(input(\"\\nGuess the number: \"))\n",
+        "for i in range(starting_number,last_number):\n",
+        "\n",
+        "    if computer_choice == user_choice:\n",
+        "      print(\"You guess the correct number.\")\n",
+        "      break\n",
+        "    elif computer_choice > user_choice:\n",
+        "      print(\"You guess smaller number.Please choose higher number\")\n",
+        "      user_choice = int(input(\"Guess the number again: \"))\n",
+        "    elif computer_choice < user_choice:\n",
+        "      print(\"You guess higher number.Please choose smaller number\")\n",
+        "      user_choice = int(input(\"Guess the number again: \"))\n",
+        "    else:\n",
+        "      print(\"You lost\\nchoose numbers between given range\\nStart again\")"
+      ],
+      "metadata": {
+        "id": "l4fYbNzdOqQX"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "-KQqsupNPYUe"
+      },
+      "execution_count": 48,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
